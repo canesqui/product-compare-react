@@ -116,8 +116,8 @@ IF EXIST "%DEPLOYMENT_TARGET%\package.json" (
   IF !ERRORLEVEL! NEQ 0 goto error
 
 :: 5. Copy Build to wwwroot
-  call :ExecuteCmd xcopy /s "%DEPLOYMENT_SOURCE%\Build" "%DEPLOYMENT_TARGET%"
-  IF !ERRORLEVEL! NEQ 0 goto error
+::  call :ExecuteCmd xcopy /s "%DEPLOYMENT_SOURCE%\Build" "%DEPLOYMENT_TARGET%"
+::  IF !ERRORLEVEL! NEQ 0 goto error
   
 )
 
