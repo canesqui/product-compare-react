@@ -112,7 +112,7 @@ IF EXIST "%DEPLOYMENT_TARGET%\package.json" (
 )
 
 :: 4. Build application
-  call :ExecuteCmd !NPM_CMD! build
+  call :ExecuteCmd !NPM_CMD! run build
   IF !ERRORLEVEL! NEQ 0 goto error
 
 :: 5. Copy Build to wwwroot
