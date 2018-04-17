@@ -56,12 +56,12 @@ goto Deployment
 :SelectNodeVersion
 
 IF NOT DEFINED WEBSITE_NODE_DEFAULT_VERSION (
-	echo WEBSITE_NODE_DEFAULT_VERSION not defined
+	echo WEBSITE_NODE_DEFAULT_VERSION not defined. Kudu does not use package.json values.
   goto error
 )
 
 IF NOT DEFINED WEBSITE_NPM_DEFAULT_VERSION (
-	echo WEBSITE_NPM_DEFAULT_VERSION not defined
+	echo WEBSITE_NPM_DEFAULT_VERSION not defined. Kudu does not use package.json values.
   goto error
 )
 
